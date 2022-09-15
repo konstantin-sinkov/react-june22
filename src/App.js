@@ -4,7 +4,7 @@
 //         Створити 6 персонажів
 
 import './App.css';
-import Characters from "./components/character/Characters";
+import Characters from "./components/characters/Characters";
 
 function App() {
   return (
