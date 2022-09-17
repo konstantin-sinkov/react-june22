@@ -1,0 +1,12 @@
+.launch_item {
+    background-color: lightskyblue;
+    margin: 10px;
+    padding: 30px 10px;
+    text-align: center;
+    /*width: 400px;*/
+}
+
+.launch_item img {
+    margin-top: 25px;
+    width: 250px;
+}

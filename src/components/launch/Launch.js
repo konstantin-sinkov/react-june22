@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './launch.css';
+
 const Launch = ({launch}) => {
     return (
         <div className={'launch_item'}>

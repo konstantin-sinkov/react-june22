@@ -4,7 +4,8 @@ import Launches from "./components/launches/Launches";
 function App() {
     return (
         <div>
-          <Launches />
+            <h2>List of launches</h2>
+            <Launches/>
         </div>
     );
 }
