@@ -1,11 +1,20 @@
-import './App.css';
+import {useState} from "react";
+
 import Launches from "./components/launches/Launches";
+import LaunchDetailInfo from "./components/launch-detail-info/LaunchDetailInfo";
+import './App.css';
 
 function App() {
+    const [checkedLaunch, setCheckedLaunch] = useState(null);
+    
+    const launchChecker = (launch) => {
+        setCheckedLaunch(launch);
+    }
+    
     return (
         <div>
-            <h2>List of launches</h2>
-            <Launches/>
+            <LaunchDetailInfo checkedLaunch={checkedLaunch}/>
+            <Launches launchChecker={launchChecker}/>
         </div>
     );
 }
