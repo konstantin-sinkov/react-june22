@@ -1,9 +1,13 @@
 import React from 'react';
 
-const Car = () => {
+const Car = ({car}) => {
     return (
         <div>
-            Car    
+            <p> {car.model} -- {car.year} year</p>
+            <p>price -- {car.price}</p>
+            <button>Delete</button>
+            <button>Edit</button>
+            <hr />
         </div>
     );
 }
