@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Todo = () => {
-  return (
-   <div>
+const Todo = ({todo: {id, title, completed}}) => {
     
-   </div>
-  );
- }
+    return (
+        <div className={'item'}>
+            <p>{id} -- {title}</p>
+            <p>status -- {completed ? 'completed' : 'uncompleted'}</p>
+        </div>
+    );
+}
 
 export {Todo};

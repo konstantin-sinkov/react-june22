@@ -4,7 +4,7 @@ import {
 } from "react-router-dom";
 
 import './App.css';
-import {Albums, Header, Post, Todos, Comments} from './components'
+import {Albums, Header, Posts, Todos, Comments} from './components'
 
 function App() {
     return (
@@ -14,7 +14,7 @@ function App() {
                     <Route path={'albums'} element={<Albums/>}/>
                     <Route path={'todos'} element={<Todos/>}/>
                     <Route path={'comments'} element={<Comments/>}>
-                        {/*<Route path={`/:post_ID`} element={<Post/>}/>*/}
+                        <Route path={`:postId`} element={<Posts/>}/>
                     </Route>
                 </Route>
             </Routes>

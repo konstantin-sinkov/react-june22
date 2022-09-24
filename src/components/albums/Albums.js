@@ -1,11 +1,25 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import {services} from "../../services/service";
+import {Album} from "../album/Album";
 
 const Albums = () => {
-  return (
-   <div>
+    const [albums, setAlbums] = useState([]);
     
-   </div>
-  );
- }
+    useEffect(() => {
+        services.getAlbums().then(value => setAlbums([...value]));
+    }, []);
+    
+    
+    return (
+        <div>
+            <h2 className={'header-page'}>Albums page</h2>
+            <div className={'wrapper'}>
+                {
+                    albums.map(album => <Album album={album}/>)
+                }
+            </div>
+        </div>
+    );
+}
 
 export {Albums};
