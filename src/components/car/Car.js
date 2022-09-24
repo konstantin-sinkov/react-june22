@@ -1,8 +1,10 @@
 import React from 'react';
 
+import css from './Car.module.css';
+
 const Car = ({car}) => {
     return (
-        <div>
+        <div className={css.Car}>
             <p> {car.model} -- {car.year} year</p>
             <p>price -- {car.price}</p>
             <button>Delete</button>
