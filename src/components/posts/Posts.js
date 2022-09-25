@@ -13,7 +13,7 @@ const Posts = () => {
         services.getPostById(postId).then(value => setPosts([...value.data]));
     }, [postId]);
     
-    console.log(posts);
+    // console.log(posts);
     
     return (
         <div>

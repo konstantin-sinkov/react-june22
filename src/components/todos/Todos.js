@@ -13,10 +13,12 @@ const Todos = () => {
     return (
         <div>
             <h2 className={'header-page'}>Todos page</h2>
-            <div className={'wrapper'}>
-                {
-                    todos.map(todo => <Todo todo={todo} key={todo.id}/>)
-                }
+            <div className={'content_wrapper'}>
+                <div className={'wrapper'}>
+                    {
+                        todos.map(todo => <Todo todo={todo} key={todo.id}/>)
+                    }
+                </div>
             </div>
         </div>
     );

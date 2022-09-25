@@ -13,10 +13,12 @@ const Albums = () => {
     return (
         <div>
             <h2 className={'header-page'}>Albums page</h2>
-            <div className={'wrapper'}>
-                {
-                    albums.map(album => <Album album={album}/>)
-                }
+            <div className={'content_wrapper'}>
+                <div className={'wrapper'}>
+                    {
+                        albums.map(album => <Album album={album} key={album.id}/>)
+                    }
+                </div>
             </div>
         </div>
     );

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header-page {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 20px 0;
+}
+
+.content_wrapper {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.item {
+    background-color: lightcyan;
+    padding: 10px 5px;
+}

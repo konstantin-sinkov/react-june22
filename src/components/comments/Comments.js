@@ -19,12 +19,14 @@ const Comments = () => {
                 <hr />
             </div>
             <h2 className={'header-page'}>Comments page</h2>
-            <div className={'wrapper'}>
-                {comments.map(comment =>
-                    <Comment
-                        comment={comment}
-                        key={comment.id}
-                    />)}
+            <div className={'content_wrapper'}>
+                <div className={'wrapper'}>
+                    {comments.map(comment =>
+                        <Comment
+                            comment={comment}
+                            key={comment.id}
+                        />)}
+                </div>
             </div>
         </div>
     );
