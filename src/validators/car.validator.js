@@ -2,7 +2,7 @@ import Joi from "joi";
 
 
 const carValidator = Joi.object({
-    model:Joi.string().regex(/^[a-zA-ZА-яёЁіІїЇҐґєЄ]{1,20}$/).required().messages({
+    model:Joi.string().regex(/^[a-zA-ZА-яёЁіІїЇҐґєЄ]{1,20}$/).messages({
         'string.pattern.base':'Тільки букви мінімум 1 символ максимум 20 символів'
     }),
     price:Joi.number().min(0).max(1000000).required(),
