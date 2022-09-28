@@ -15,7 +15,6 @@ const CarForm = ({setCars}) => {
         const {data} = await carsService.addCar(car);
         setCars(cars => [...cars, car]); //викликаємо сеттер і передаємо в нього старе значення cars + {car}, setState слідкує за Cars і перерендерить сторінку
         // console.log(data);
-        
     }
     
     return (
