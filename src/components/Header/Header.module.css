@@ -1,0 +1,11 @@
+.Header {
+    width: 100%;
+    padding: 25px 10px 25px 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: teal;
+    color: lemonchiffon;
+    font-weight: bold;
+    font-size: 25px;
+    /*border-bottom: 2px solid black;*/
+}

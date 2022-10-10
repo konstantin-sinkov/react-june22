@@ -1,9 +1,14 @@
 import React from 'react';
+import {useDispatch} from "react-redux";
+import {userActions} from "../../redux";
 
-const User = () => {
+const User = ({user: {id, name, email}, user}) => {
+    const dispatch = useDispatch();
+    
     return (
         <div>
-            User
+            {id} -- {name} -- {email}
+            <button onClick={() => dispatch(userActions.setCurrentUser(user))}>Set User</button>
         </div>
     );
 }

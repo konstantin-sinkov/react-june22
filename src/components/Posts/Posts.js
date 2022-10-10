@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Posts = () => {
-  return (
-   <div>
-    
-   </div>
-  );
- }
+    return (
+        <div>
+            Posts
+        </div>
+    );
+}
 
 export {Posts};
